@@ -1,0 +1,223 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    margin:0px;
+}
+html,body{
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    overflow-x: hidden;
+}
+h2, p, footer{
+margin:0px;
+}
+h2{
+    color:  rgb(3, 42, 67);
+}
+.logo{
+    width: 20%;
+    height: auto;
+    padding: 1em;
+}
+
+footer, .employeesSection, #Products {
+    margin-bottom: 0;
+}
+
+nav .links {
+    display: flex;
+   
+}
+nav .links a{
+    margin-left: 15px; 
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+}
+nav{
+    display:flex;
+    background-color: rgb(3, 42, 67);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.productImg{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+ } 
+ #Products{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+ gap:20px;
+ width: 100%;
+ max-width: 1200px;
+ margin: 0 auto;
+ justify-content: center; 
+ 
+ }
+ .ProductDiv h2{
+    display:flex;
+    font-size: 50px;
+    justify-content: center;
+    
+}
+
+ 
+ .productContainer{
+     flex: 1 1 calc(25%-40px);
+     width: 100%;
+     border: 1 black solid;
+     margin: 3em;
+     
+ }
+
+#Employees{
+    background-color: rgb(3, 42, 67);
+    padding: 50px;
+   max-width: 100%;
+    
+}
+
+#Employees h2{
+    
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.employeesSection{
+    gap: 2em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+   
+    
+}
+.employeeDiv{
+    background-color: white;
+    opacity: 80%;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+#productTitle{
+    padding-top: 20px;
+}
+
+.employeeImg{
+width: 100%;
+height: auto;
+}
+
+
+.mission{
+    display: block;
+    font-size: 30px;
+background-color: white;
+position: absolute;
+top: 70px;
+z-index:2;
+width: 40%;
+left: 150;
+padding: 40px;
+opacity: 80%;
+margin-right: 20px;
+max-height: 80%;
+}
+.banner{
+    position: relative;
+    width: 100%;
+
+}
+header{
+    position: relative;
+}
+
+
+@media (max-width: 1500px){
+    .mission{
+        width: 60%;
+        left: 5%;
+        top: 100;
+        padding: 20px;
+        font-size: 22px ;
+    }
+    .mission h2{
+        font-size: 24px;
+    }
+}
+@media (max-width: 1082px){
+    .mission{
+        width: 60%;
+        left: 5%;
+        top: 4em;
+        padding: 20px;
+        font-size: 22px ;
+    }
+    .mission h2{
+        font-size: 25px;
+    }
+    .banner{
+        width:100%;
+        height: 50%;
+        object-fit: cover; 
+
+    }
+    .ProductDiv {
+        margin: 0 4em;
+         
+     }
+}
+@media (max-width: 768px){
+    html{
+        font-size: 16px;
+    }
+    .ProductDiv {
+       
+       margin: 0 4em;
+        
+    }
+    #Products{
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 20px;
+    }
+    .mission{
+        width: 70%;
+        left: 5%;
+        top: 20px;
+        padding: 20px;
+        font-size: 16px ;
+    }
+    .mission h2{
+        font-size: 20px;
+    }
+   .banner {
+    width:100%;
+    height: 40%;
+    object-fit: cover;
+   }
+
+   .ProductDiv h2{
+    font-size: 40px;
+   }
+   #Employees h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    
+   }
+   nav .links a{
+    font-size: 13px;
+   }
+     
+}
+
